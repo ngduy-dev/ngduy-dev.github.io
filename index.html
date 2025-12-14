@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Quoc Duy | Data Analyst & BI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', // Nền chính
+                        secondary: '#1e293b', // Nền phụ
+                        accent: '#38bdf8', // Màu điểm nhấn (Xanh dương)
+                        highlight: '#facc15', // Màu vàng highlight
+                        textGray: '#94a3b8'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in forwards; opacity: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .project-card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+    </style>
+</head>
+<body class="bg-primary text-white font-sans antialiased leading-relaxed">
 
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-sm border-b border-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-accent tracking-tighter">NQD<span class="text-white">.</span></a>
+            <div class="space-x-8 text-sm font-medium hidden md:block">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#contact" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-10">
+        <div class="max-w-4xl mx-auto px-6 text-center fade-in" style="animation-delay: 0.2s;">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white tracking-tight">Nguyen Quoc Duy</h1>
+            <h2 class="text-2xl md:text-3xl text-accent font-medium mb-6">Data Analyst | Business Intelligence</h2>
+            
+            <p class="text-textGray max-w-3xl mx-auto mb-10 text-lg leading-relaxed">
+                Analyst focused on transforming complex datasets into actionable business strategies. Expertise spans retail analytics, time-series forecasting, and automated reporting systems, supported by a strong foundation in software engineering and applied AI.
+            </p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-6 text-sm md:text-base text-gray-400 font-mono">
+                <a href="mailto:nguyenduy24.work@gmail.com" class="hover:text-white transition flex items-center border-b border-transparent hover:border-white pb-0.5">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </a>
+                <span class="text-gray-700">|</span>
+                <a href="https://linkedin.com/in/nguyenduy-it" target="_blank" class="hover:text-white transition flex items-center border-b border-transparent hover:border-white pb-0.5">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </a>
+                <span class="text-gray-700">|</span>
+                <a href="https://github.com/ngduy-dev" target="_blank" class="hover:text-white transition flex items-center border-b border-transparent hover:border-white pb-0.5">
+                    <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+                <span class="hidden md:inline text-gray-700">|</span>
+                <span class="flex items-center text-accent hidden md:flex">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Ho Chi Minh City
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-secondary">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 items-center"><span class="text-accent">01.</span> About Me</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div class="text-textGray text-lg space-y-6">
+                    <p>
+                        I am currently a senior <strong>Computer Science student at Ton Duc Thang University</strong> with a GPA of <strong>3.32/4.0</strong>. My journey started with software development, but I quickly discovered a passion for uncovering the stories hidden within data.
+                    </p>
+                    <p>
+                        With experience ranging from building <strong>full-stack desktop applications</strong> for enterprises to developing <strong>AI models on edge devices</strong>, I possess a unique blend of "Builder" and "Analyst" mindsets.
+                    </p>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-white font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Certifications & Education</h4>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base">
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-3 text-xs"></i> APTIS ESOL (B2)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-3 text-xs"></i> Gemini Certified User</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-3 text-xs"></i> Agile & Scrum Training</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-3 text-xs"></i> TDTU (2022-2026)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative mt-8 lg:mt-0">
+                    <div class="absolute inset-0 bg-accent rounded-lg blur opacity-20"></div>
+                    <div class="relative bg-primary p-8 rounded-lg border border-gray-700 shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Why hire me?</h3>
+                        <ul class="space-y-6 text-textGray">
+                            <li class="flex">
+                                <i class="fas fa-trophy text-highlight mt-1 mr-4"></i>
+                                <span><strong>Published Researcher:</strong> Author of a paper accepted at ICCIES 2026 regarding Edge AI optimization.</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-database text-accent mt-1 mr-4"></i>
+                                <span><strong>Big Data Ready:</strong> Experienced in processing datasets with 245M+ records.</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-layer-group text-accent mt-1 mr-4"></i>
+                                <span><strong>Full-System Thinking:</strong> I don't just write SQL; I understand the software architecture behind the data.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">02.</span> Technical Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-secondary rounded-xl shadow-lg border border-gray-800 hover:border-accent transition duration-300 text-center">
+                    <div class="text-accent text-5xl mb-6"><i class="fab fa-python"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Programming</h3>
+                    <p class="text-textGray leading-relaxed">Python, C# .NET, SQL, JavaScript (Basic)</p>
+                </div>
+                <div class="p-8 bg-secondary rounded-xl shadow-lg border border-gray-800 hover:border-accent transition duration-300 text-center">
+                    <div class="text-accent text-5xl mb-6"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Data & BI</h3>
+                    <p class="text-textGray leading-relaxed">Power BI (DAX), Pandas, NumPy, XGBoost, Time-Series</p>
+                </div>
+                <div class="p-8 bg-secondary rounded-xl shadow-lg border border-gray-800 hover:border-accent transition duration-300 text-center">
+                    <div class="text-accent text-5xl mb-6"><i class="fas fa-terminal"></i></div>
+                    <h3 class="text-xl font-bold mb-4 text-white">DevOps & Tools</h3>
+                    <p class="text-textGray leading-relaxed">Git, Docker, Linux, Google Cloud APIs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-secondary">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 items-center"><span class="text-accent">03.</span>  Work Experience</h2>
+            <div class="border-l-2 border-gray-700 pl-10 relative ml-4">
+                <div class="mb-12 relative">
+                    <span class="absolute -left-[50px] top-1 bg-accent h-5 w-5 rounded-full border-4 border-secondary"></span>
+                    <h3 class="text-2xl font-bold text-white">Full-stack Desktop Application Developer</h3>
+                    <h4 class="text-accent font-medium mb-1">BCMP Company</h4>
+                    <p class="text-sm text-textGray mb-6 italic">Sep 2024 - Dec 2024</p>
+                    <ul class="list-disc text-textGray space-y-3 pl-4">
+                        <li>Developed <strong>CompList</strong>, an enterprise checklist management system using <strong>C# .NET WinForms</strong>.</li>
+                        <li>Designed system architecture (SRS, UML Activity/Sequence/State) ensuring scalability and maintainability.</li>
+                        <li>Implemented Multi-layer Architecture (UI, BLL, DAL) and Role-based Access Control.</li>
+                        <li>Integrated <strong>Google Forms & Sheets APIs</strong> for real-time data synchronization via QR codes.</li>
+                        <li>Automated PDF/Excel report generation for KPI tracking.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">04.</span> Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-secondary rounded-xl p-8 border border-gray-800 project-card transition duration-300 flex flex-col h-full">
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fas fa-chart-line text-4xl text-accent"></i>
+                        <a href="https://github.com/ngduy-dev/Retail-Sales-Performance-Analysis" target="_blank"><i class="fab fa-github text-2xl text-textGray hover:text-white"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Retail Sales Forecasting</h3>
+                    <p class="text-textGray text-sm mb-6 flex-grow">
+                        Analyzed <strong>245M+ records</strong>. Built ETL pipelines and XGBoost model (R<sup>2</sup> = 0.54) to forecast demand. Identified +28-35% traffic peak on Saturdays.
+                    </p>
+                    <div class="text-xs text-accent font-mono space-x-2 mt-auto">
+                        <span class="bg-primary px-2 py-1 rounded">Python</span>
+                        <span class="bg-primary px-2 py-1 rounded">Power BI</span>
+                        <span class="bg-primary px-2 py-1 rounded">XGBoost</span>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-xl p-8 border border-yellow-500/30 project-card transition duration-300 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-yellow-500/10 rounded-bl-full -mr-4 -mt-4"></div>
+                    
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fas fa-microchip text-4xl text-accent"></i>
+                        <a href="https://github.com/vinhisreal/YOLO-LitePi" target="_blank"><i class="fab fa-github text-2xl text-textGray hover:text-white"></i></a>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold mb-3 text-white">YOLO-LitePi (Research)</h3>
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/50">
+                            <i class="fas fa-trophy mr-2"></i> Accepted for ICCIES 2026
+                        </span>
+                    </div>
+
+                    <p class="text-textGray text-sm mb-6 flex-grow">
+                        Edge-optimized traffic sign recognition on Raspberry Pi 5. Achieved 24 FPS using custom YOLO architecture and NCNN backend optimization.
+                    </p>
+                    <div class="text-xs text-accent font-mono space-x-2 mt-auto">
+                        <span class="bg-primary px-2 py-1 rounded">PyTorch</span>
+                        <span class="bg-primary px-2 py-1 rounded">Raspberry Pi</span>
+                        <span class="bg-primary px-2 py-1 rounded">NCNN</span>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-xl p-8 border border-gray-800 project-card transition duration-300 flex flex-col h-full">
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fas fa-tasks text-4xl text-accent"></i>
+                        <a href="https://github.com/ngduy-dev/CompList" target="_blank"><i class="fab fa-github text-2xl text-textGray hover:text-white"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">CompList Enterprise System</h3>
+                    <p class="text-textGray text-sm mb-6 flex-grow">
+                        Desktop checklist management system for BCMP Company. Features QR workflows, automated PDF reporting, and Google API integration.
+                    </p>
+                    <div class="text-xs text-accent font-mono space-x-2 mt-auto">
+                        <span class="bg-primary px-2 py-1 rounded">C# .NET</span>
+                        <span class="bg-primary px-2 py-1 rounded">Google API</span>
+                        <span class="bg-primary px-2 py-1 rounded">WinForms</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 text-center bg-primary border-t border-gray-800">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to drive business value through data.</h2>
+        <p class="text-textGray text-lg">
+            Contact me at <a href="mailto:nguyenduy24.work@gmail.com" class="text-accent hover:text-white transition font-medium decoration-2 underline-offset-4 hover:underline">nguyenduy24.work@gmail.com</a>
+        </p>
+
+        <footer class="mt-20 text-xs text-gray-700">
+            <p>Designed & Built by Nguyen Quoc Duy</p>
+        </footer>
+    </section>
+
+</body>
+</html>
